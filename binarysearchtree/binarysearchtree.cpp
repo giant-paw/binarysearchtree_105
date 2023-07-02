@@ -17,6 +17,12 @@ public:
     }
 };
 
+class BinaryTree {
+public:
+    Node* ROOT;
+
+};
+
 int main()
 {
 }
