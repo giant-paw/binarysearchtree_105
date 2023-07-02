@@ -158,6 +158,8 @@ int main()
 			break;
 		}
 
+		case '5':
+			return 0;
 
 		}
 	}
