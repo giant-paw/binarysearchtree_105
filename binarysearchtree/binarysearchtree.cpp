@@ -82,7 +82,7 @@ public:
 		}
 	}
 
-	void prorder(Node* ptr)
+	void preorder(Node* ptr)
 	{
 		if (ROOT == NULL)
 		{
@@ -93,8 +93,8 @@ public:
 			if (ptr != NULL)
 			{
 				cout << ptr->info << " ";
-				prorder(ptr->leftchild);
-				prorder(ptr->rightchild);
+				preorder(ptr->leftchild);
+				preorder(ptr->rightchild);
 			}
 		}
 
@@ -133,5 +133,15 @@ int main()
 		char ch;
 		cin >> ch;
 		cout << endl;
+
+		switch (ch) {
+		case '1': {
+			cout << "Enter a word : ";
+			string word;
+			cin >> word;
+			obj.insert(word);
+			break;
+		}
+		}
 	}
 }
